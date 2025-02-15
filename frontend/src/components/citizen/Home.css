@@ -1,0 +1,29 @@
+.home {
+  padding: 20px;
+}
+
+.announcement-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.announcement-table th,
+.announcement-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.announcement-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.announcement-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.announcement-table tr:hover {
+  background-color: #ddd;
+}

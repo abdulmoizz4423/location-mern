@@ -1,0 +1,27 @@
+.storage-table {
+  margin-top: 20px;
+}
+
+.storage-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.storage-table th,
+.storage-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.storage-table th {
+  background-color: #f2f2f2;
+}
+
+.storage-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.storage-table tr:hover {
+  background-color: #ddd;
+}

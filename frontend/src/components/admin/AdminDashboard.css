@@ -1,0 +1,138 @@
+.dashboard-layout {
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #343a40;
+}
+
+.dashboard-content {
+  flex-grow: 1;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.dashboard-content h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #0056b3;
+}
+
+.section input[type="text"],
+.section input[type="password"],
+.section button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.section ul li {
+  background: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section ul li button {
+  padding: 5px 10px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.section ul li button:hover {
+  background-color: #c82333;
+}
+
+.table-container {
+  margin-top: 20px;
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container th,
+.table-container td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.map-container,
+.statistics-container {
+  margin-top: 40px;
+}
+
+.statistics-container {
+  height: 400px;
+}
+
+.chart-wrapper {
+  position: relative;
+  height: 400px;
+  width: 100%;
+}
+
+.chart-container {
+  height: 100%;
+  width: 100%;
+}
+
+/*styles for rescuer table */
+.rescuer-creation table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.rescuer-creation th,
+.rescuer-creation td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.rescuer-creation th {
+  background-color: #f2f2f2;
+}
+
+.map-panel {
+  height: 600px; /* Fixed height for the map panel */
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.leaflet-container {
+  height: 100%; /* Ensure the leaflet container takes up the full height of the map panel */
+  width: 100%; /* Ensure the leaflet container takes up the full width of the map panel */
+}
