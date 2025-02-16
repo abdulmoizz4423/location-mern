@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend
+  namespace: abdulmoiz
+spec:
+  selector:
+    matchLabels:
+      tier: backend
+  template:
+    metadata:
+      labels:
+        tier: backend
+    spec:
+      containers:
+      - name: backend
+        image: 557690581016.dkr.ecr.us-east-1.amazonaws.com/location-mern:backend
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 5000
+        env:
+          - name: MONGO_URI
+            value: "mongodb://192.168.1.100:27017/mydatabase"
+      imagePullSecrets:
+        - name: ecr-credentials
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend-service
+  namespace: abdulmoiz
+spec:
+  selector:
+    tier: backend
+  ports:
+  - port: 5000
+    targetPort: 5000

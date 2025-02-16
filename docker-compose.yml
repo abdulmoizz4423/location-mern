@@ -3,7 +3,7 @@ version: '3.8'
 services:
   mongo:
     container_name: mongodb-container
-    image: mongo
+    build: ./database
     ports:
       - "27017:27017"
     volumes:
