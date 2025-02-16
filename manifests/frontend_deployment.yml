@@ -22,22 +22,20 @@ spec:
         ports:
         - containerPort: 3000
       imagePullSecrets:
-        - name: ecr-credentials
+        - name: my-secret
 
 ---
 
 apiVersion: v1
 kind: Service
 metadata:
-  name: frontend-service
-  namespace: abdulmoiz
+  name: frontend
 spec:
   selector:
     tier: frontend
-  type: NodePort
+  type: LoadBalancer
   ports:
-  - port: 3000
-    targetPort: 3000
-    protocol: TCP
-    nodePort: 30001
+    - protocol: TCP
+      port: 80
+      targetPort: 3000
   

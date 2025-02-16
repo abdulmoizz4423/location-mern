@@ -25,14 +25,14 @@ spec:
           - name: MONGO_URI
             value: "mongodb://192.168.1.100:27017/mydatabase"
       imagePullSecrets:
-        - name: ecr-credentials
+        - name: my-secret
 
 ---
 
 apiVersion: v1
 kind: Service
 metadata:
-  name: backend-service
+  name: backend
   namespace: abdulmoiz
 spec:
   selector:
