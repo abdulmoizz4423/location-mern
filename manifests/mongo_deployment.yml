@@ -25,8 +25,8 @@ spec:
             limits:
               memory: "1Gi" # Maximum memory allowed
               cpu: "1"
-      imagePullSecrets:
-        - name: my-secret
+      # imagePullSecrets:
+      #   - name: my-secret
 
 ---
 apiVersion: v1
