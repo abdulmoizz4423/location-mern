@@ -24,8 +24,8 @@ spec:
         env:
           - name: MONGO_URI
             value: "mongodb://mongo:27017/mydatabase"
-      imagePullSecrets:
-        - name: my-secret
+      # imagePullSecrets:
+      #   - name: my-secret
 
 ---
 
