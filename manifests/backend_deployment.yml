@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: 557690581016.dkr.ecr.us-east-1.amazonaws.com/jenkins:backend-4
+        image: 557690581016.dkr.ecr.us-east-1.amazonaws.com/jenkins:backend-5
         imagePullPolicy: IfNotPresent
         resources:
           limits:
