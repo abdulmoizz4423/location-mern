@@ -15,6 +15,7 @@ spec:
       containers:
       - name: frontend
         image: 557690581016.dkr.ecr.us-east-1.amazonaws.com/jenkins:frontend-4
+        imagePullPolicy: IfNotPresent
         resources:
           limits:
             memory: "1024Mi"
