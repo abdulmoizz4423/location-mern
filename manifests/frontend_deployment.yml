@@ -15,15 +15,14 @@ spec:
       containers:
       - name: frontend
         image: 557690581016.dkr.ecr.us-east-1.amazonaws.com/jenkins:frontend-5
-        imagePullPolicy: IfNotPresent
         resources:
           limits:
             memory: "1024Mi"
             cpu: "500m"
         ports:
         - containerPort: 3000
-      # imagePullSecrets:
-      #   - name: my-secret
+      imagePullSecrets:
+        - name: my-secret
 
 ---
 
