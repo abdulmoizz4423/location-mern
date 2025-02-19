@@ -21,8 +21,8 @@ spec:
             cpu: "500m"
         ports:
         - containerPort: 3000
-      imagePullSecrets:
-        - name: my-secret
+      # imagePullSecrets:
+      #   - name: my-secret
 
 ---
 
