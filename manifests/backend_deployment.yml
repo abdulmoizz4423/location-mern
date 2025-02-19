@@ -15,7 +15,6 @@ spec:
       containers:
       - name: backend
         image: 557690581016.dkr.ecr.us-east-1.amazonaws.com/jenkins:backend-5
-        imagePullPolicy: IfNotPresent
         resources:
           limits:
             memory: "128Mi"
@@ -25,8 +24,8 @@ spec:
         env:
           - name: MONGO_URI
             value: "mongodb://mongo:27017/mydatabase"
-      # imagePullSecrets:
-      #   - name: my-secret
+      imagePullSecrets:
+        - name: my-secret
 
 ---
 
