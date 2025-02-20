@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: 557690581016.dkr.ecr.us-east-1.amazonaws.com/jenkins:frontend-18
+        image: 557690581016.dkr.ecr.us-east-1.amazonaws.com/jenkins:frontend-19
         resources:
           limits:
             memory: "1024Mi"
