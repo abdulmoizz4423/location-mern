@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: 557690581016.dkr.ecr.us-east-1.amazonaws.com/frontend:v-54
+        image: 557690581016.dkr.ecr.us-east-1.amazonaws.com/frontend:v-55
         resources:
           limits:
             memory: "1024Mi"
