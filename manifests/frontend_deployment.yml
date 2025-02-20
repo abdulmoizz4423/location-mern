@@ -22,7 +22,7 @@ spec:
         ports:
         - containerPort: 3000
       imagePullSecrets:
-        - name: my-secret
+        - name: ecr-secret-newww
 
 ---
 
