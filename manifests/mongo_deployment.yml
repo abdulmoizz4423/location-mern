@@ -26,7 +26,7 @@ spec:
               memory: "1Gi" # Maximum memory allowed
               cpu: "1"
       imagePullSecrets:
-        - name: my-secret
+        - name: ecr-secret-newww
 
 ---
 
