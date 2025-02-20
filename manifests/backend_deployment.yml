@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: 557690581016.dkr.ecr.us-east-1.amazonaws.com/jenkins:backend-35
+        image: 557690581016.dkr.ecr.us-east-1.amazonaws.com/jenkins:backend-37
         resources:
           limits:
             memory: "128Mi"
