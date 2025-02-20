@@ -56,7 +56,7 @@ function Home() {
 
   return (
     <div className="home-container">
-      <h1 className="title">Crisis Management Center</h1>
+      <h1 className="title">Abdul Moiz Center</h1>
       <div className="form-toggle">
         <button
           onClick={() => setIsSignUp(true)}
