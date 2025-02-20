@@ -28,7 +28,6 @@ spec:
         - name: my-secret
 
 ---
-
 apiVersion: v1
 kind: Service
 metadata:
